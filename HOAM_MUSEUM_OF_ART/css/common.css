@@ -1,35 +1,69 @@
 @charset "utf-8";
 @import url(default.css);
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://roboto-webfont.googlecode.com/files/Roboto-Light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://roboto-webfont.googlecode.com/files/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://roboto-webfont.googlecode.com/files/Roboto-Medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 ::selection {
-    background-color: purple;
-    color: #ED2224;
+    background-color: transparent;
+    color: #888;
 }
 ::-webkit-selection {
-    background-color: purple;
-    color: #ED2224;
+    background-color: transparent;
+    color: #888;
 }
 ::-moz-selection {
-    background-color: purple;
-    color: #ED2224;
+    background-color: transparent;
+    color: #888;
 }
 ::-o-selection {
-    background-color: purple;
-    color: #ED2224;
+    background-color: transparent;
+    color: #888;
 }
 
 html, body {
-    font-family: 'PPGrafier', 'JeonjuCraft', serif;
+    font-family: 'Roboto', 'Pretendard', sans-serif;
     font-size: 15px;  
-    color: #2E2B24;
-    background-color: #FDFAF3;
-    font-weight: 400; 
+    color: #fdfdfd;
+    background-color: #020202;
+    font-weight: 300; 
     line-height: 1.2;
     word-break: keep-all;
     word-wrap: break-word; 
 }
 .wrapper {
-    width: 1280px;
+    width: 1600px;
+    margin: 0 auto;
+}
+.wrapper2 {
+    width: 1200px;
     margin: 0 auto;
 }
 #wrap {
@@ -64,14 +98,14 @@ html, body {
     top: 0;
     width: 100%;
     line-height: 50px;
-    background-color: #135301;
-    color: black;
+    background-color: #fdfdfd;
+    color: #020202;
     font-size: 20px;
     font-weight: 900;
     text-align: center;
 }
 .skipnav a[href="#gnb"] {
-    background-color: #960209;
+    background-color: #888;
 }
 .skipnav a:focus {
     top: 100px;
