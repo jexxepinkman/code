@@ -1,13 +1,4 @@
 $(document).ready(function(){
-    $('header .gnb >ul.depth1 >li').on('mouseenter focusin', function(){
-        $('header .gnb >ul.depth1 >li').addClass('on')
-        $('header .tnb').addClass('on')
-    })
-    $('header').on('mouseleave', function(){
-        $('header .gnb >ul.depth1 >li').removeClass('on')
-        $('header .tnb').removeClass('on')
-    })
-
     const exhibit_swiper = new Swiper('.exhibit .swiper', {
 
 	effect: "fade",
@@ -35,11 +26,4 @@ $(document).ready(function(){
 	centeredSlides: false,
 	loop: true,
 });
-
-	$('footer .familysite button').on('click', function(){
-		$('footer .familysite').addClass('on')
-	})
-	$('footer .familysite.on button').on('click', function(){
-		$('footer .familysite').removeClass('on')
-	})
 })
