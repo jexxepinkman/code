@@ -14,12 +14,12 @@ $(document).ready(function(){
 
     const sns_swiper = new Swiper('.sns .swiper', {
 	slidesPerView: "auto",
-	spaceBetween: 100,
+	spaceBetween: 30,
 	breakpoints: {
-		640: {  /* 640px 이상이 되면 적용 */
-			spaceBetween: 30, 
+		320: {
+			spaceBetween: 60, 
 		},
-		1024: {  /* 1024px 이상이 되면 적용 */
+		1025: {
 			spaceBetween: 100,
 		},
 	},
