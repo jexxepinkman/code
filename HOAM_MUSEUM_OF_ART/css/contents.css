@@ -167,9 +167,13 @@
     text-align: center;
 }
 .cts_notice .tit h2 {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 290px;
+    transform: translate(-50%, 0);
     font-size: 50px;
     font-weight: 400;
+    z-index: 100;
 }
 .cts_notice .tit h2::before {
     position: absolute;
@@ -181,19 +185,28 @@
     font-weight: 400;
     color: rgba(253, 253, 253, 0.3);
 }
-.cts_notice .tit h2::after {
+.cts_notice .board::after {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    transform: translate(-52%, -50%);
+    content: "";
+    background-color: #020202;
+    width: 140px;
+    height: 100px;
+}
+.cts_notice .board::before {
+    position: absolute;
+    right: 25px;
+    bottom: -10px;
     content: "";
     background-color: #020202;
     width: 100px;
     height: 100px;
-    z-index: -1;
 }
 .cts_notice .board {
     border: 1px solid #fdfdfd;
+    margin-top: 120px;
 }
 .cts_notice .board .text ul {
     display: flex;
@@ -219,18 +232,6 @@
     right: 50px;
     bottom: -20px;
 }
-/*
-.cts_notice .board .count::before {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    content: "";
-    background-color: #020202;
-    width: 130px;
-    height: 130px;
-    z-index: -1;
-}*/
 .cts_notice .board .count span {
     font-size: 40px;
     font-weight: 400;
