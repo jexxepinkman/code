@@ -855,7 +855,7 @@
 }
 @media screen and (max-width:1024px) {
     .sns {
-        height: 640px;
+        height: 600px;
     }
     .sns h2 {
         font-size: 50px;
@@ -962,6 +962,15 @@
         padding: 8px 22px 10px 20px;
     }
 }
+@media screen and (max-width:490px) {
+    .sns {
+        height: 400px;
+    }
+    .sns h2 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+}
 
 
 .contact {
@@ -1037,24 +1046,37 @@
     }
 }
 @media screen and (max-width:1620px) {
+    .contact {
+        height: 500px;
+    }
     .contact .map iframe {
         width: 1000px;
         height: 500px;
     }
     .contact .btn a {
-        padding-right: 100px;
+        padding-right: 130px;
+        padding-top: 180px;
     }
     .contact .btn a::before {
         right: 18px;
     }
 }
 @media screen and (max-width:1360px) {
+    .contact {
+        height: 400px;
+    }
     .contact .map iframe {
         width: 800px;
         height: 400px;
     }
+    .contact .btn a {
+        padding-top: 150px; 
+    }
 }
 @media screen and (max-width:1200px) {
+    .contact {
+        height: 350px;
+    }
     .contact .map iframe {
         width: 600px;
         height: 300px;
@@ -1065,19 +1087,37 @@
     .contact .info p {
         font-size: 15px;
     }
+    .contact .btn a {
+        padding-right: 180px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .contact h2 {
+        font-size: 50px;
+        top: -61px;
+    }
 }
 @media screen and (max-width:900px) {
+    .contact {
+        height: 650px;
+    }
+    .contact .map {
+        float: none;
+        text-align: center;
+    }
     .contact .map iframe {
-        width: 700px;
-        height: 350px;
+        width: 100%;
+        height: 400px;
     }
     .contact .info {
         float: left;
         text-align: left;
+        margin-top: 20px;
     }
     .contact .btn {
         text-align: center;
         float: none;
+        margin-top: 310px;
     }
     .contact .btn a {
         display: inline-block;
@@ -1088,5 +1128,15 @@
     }
     .contact .btn a::before {
         display: none;
+    }
+}
+@media screen and (max-width:490px) {
+    .contact h2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:425px) {
+    .contact .btn {
+        margin-top: 330px;
     }
 }
