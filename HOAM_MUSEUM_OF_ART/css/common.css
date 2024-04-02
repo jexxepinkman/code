@@ -53,7 +53,7 @@ html, body {
     min-width: 100%;
     overflow: hidden;
 }
-@media screen and (max-width:1640px) {
+@media screen and (max-width:1320px) {
     html, body {
         font-size: 15px;  
     }
