@@ -17,13 +17,11 @@ $(document).ready(function(){
 
     $('header .gnb >ul.depth1 >li').on('mouseenter focusin', function(){
         if(device_status == 'pc'){
-            $('header .gnb >ul.depth1 >li').addClass('on')
-            $('header .tnb').addClass('on')
+            $('header').addClass('menu_over')
         }
     })
     $('header').on('mouseleave', function(){
-        $('header .gnb >ul.depth1 >li').removeClass('on')
-        $('header .tnb').removeClass('on')
+        $('header').removeClass('menu_over')
     })
 
     $('header .gnb_open').on('click', function(){
@@ -35,13 +33,15 @@ $(document).ready(function(){
         $("html, body").css({overflow : "visible", height : "auto"}).unbind('scroll touchmove mousewheel');
     })
 
-    $('header.menu_open .gnb ul.depth1 >li').on('click', function(){
+    $('header .gnb ul.depth1 >li>a').on('click', function(e){
+        e.preventDefault();
         if(device_status == 'mobile'){
-            if($(this).hasClass('on') == true){//열려있는 나 자신을 눌럿을때
-                $(this).removeClass('on')
+            console.log('dsfsdfdsfdsfs');
+            if($(this).parent().hasClass('on') == true){//열려있는 나 자신을 눌럿을때
+                $(this).parent().removeClass('on')
             }else{
                 $('header.menu_open .gnb ul.depth1 >li').removeClass('on')
-                $(this).addClass('on')
+                $(this).parent().addClass('on')
             }
         }
     })

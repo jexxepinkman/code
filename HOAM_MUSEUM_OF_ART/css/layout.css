@@ -7,6 +7,8 @@ header {
     border-top: 2px solid #fdfdfd;
     border-bottom: 2px solid #fdfdfd;
     height: 100px;
+    position: relative;
+    z-index: 100;
 }
 header .inner {
     display: flex;
@@ -34,7 +36,17 @@ header h2 a {
 }
 header .gnb {
     text-align: center;
-    width: 964px;
+    /* width: 964px; */
+    position: relative;
+}
+header.menu_over .gnb::after {
+    position: absolute;
+    left: 0;
+    top: 98px;
+    width: 200%;    
+    height: 330px;
+    background-color: #fdfdfd;
+    content: "";
 }
 header .gnb ul.depth1 {
     display: flex;
@@ -65,13 +77,11 @@ header .gnb ul.depth2 {
     left: 0;
     top: 98px;
     z-index: 100;
-    background-color: #fdfdfd;
     color: #020202;
-    width: 516px;
-    height: 330px;
+    width: 100%;
     display: none;
 }
-header .gnb >ul.depth1 >li.on >ul.depth2 {
+header.menu_over .gnb >ul.depth1 >li >ul.depth2 {
     display: block;
 }
 header .gnb ul.depth2 >li {
@@ -115,7 +125,7 @@ header .gnb ul.depth2 >li >a span::before {
 header .tnb {
     position: absolute;
     right: 0;
-    top: 200px;
+    top: 100px;
     width: 75px;
     height: 165px;
     z-index: 100;
@@ -123,10 +133,10 @@ header .tnb {
     text-align: right;
     margin-right: 20px;
 }
-header .tnb.on {
+header.menu_over .tnb {
     position: absolute;
     right: 0;
-    top: 200px;
+    top: 100px;
     width: 75px;
     height: 165px;
     z-index: 100;
@@ -252,7 +262,7 @@ header .leeum {
                         position: absolute;
                         right: 20px;
                         top: 20px;
-                        z-index: 10;
+                        z-index: 100;
                         width: 10px;
                         height: 10px;
                         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.607' height='10.607' viewBox='0 0 10.607 10.607'%3E%3Cg id='그룹_73' data-name='그룹 73' transform='translate(-286.697 -20.197)'%3E%3Crect id='사각형_80' data-name='사각형 80' width='2' height='13' transform='translate(295.889 20.197) rotate(45)' fill='%23fff'/%3E%3Crect id='사각형_84' data-name='사각형 84' width='2' height='13' transform='translate(286.697 21.611) rotate(-45)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
@@ -398,8 +408,8 @@ header .leeum {
                         position: absolute;
                         left: 20px;
                         top: 0;
-                        width: 108px;
-                        height: 50px;
+                        width: auto;
+                        height: auto;
                         z-index: 10;
                         text-align: left;
                         margin-right: 0;
