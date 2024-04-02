@@ -34,9 +34,10 @@ $(document).ready(function(){
     })
 
     $('header .gnb ul.depth1 >li>a').on('click', function(e){
-        e.preventDefault();
+        
         if(device_status == 'mobile'){
-            console.log('dsfsdfdsfdsfs');
+            e.preventDefault();
+            
             if($(this).parent().hasClass('on') == true){//열려있는 나 자신을 눌럿을때
                 $(this).parent().removeClass('on')
             }else{
