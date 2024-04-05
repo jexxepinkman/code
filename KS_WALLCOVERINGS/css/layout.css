@@ -10,17 +10,6 @@ header {
     width: 100%;
     height: 100px;
 }
-header.menu_over::before {
-    position: absolute;
-    left: 0;
-    top: 100px;
-    content: "";
-    width: 100%;
-    height: 350px;
-    background-color:rgba(255, 255, 255, 0.01);
-    backdrop-filter: blur(20px);
-    z-index: -1;
-}
 header .inner {
     display: flex;
     justify-content: space-between;
@@ -53,10 +42,11 @@ header .inner .gnb ul.depth1 {
 header .inner .gnb ul.depth1 >li {
     width: 118px;
     position: relative;
-    transition: 0.66s;
 }
 header .inner .gnb ul.depth1 >li.on {
     width: 167px;
+    background-color: #231916;
+    color: #F5F5EB;
 }
 header .inner .gnb ul.depth1 >li >a {
     display: block;
@@ -73,10 +63,33 @@ header .inner .gnb ul.depth1 >li >ul.depth2 {
 header .inner .gnb ul.depth1 >li.on >ul.depth2 {
     display: block;
 }
+header .inner .gnb ul.depth1 >li.on >ul.depth2::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 351px;
+    content: "";
+    z-index: -1;
+    background-color: #231916;
+}
 header .inner .gnb ul.depth1 >li >ul.depth2 >li >a {
     display: block;
     font-size: 18px;
     line-height: 60px;
+}
+header .inner .gnb ul.depth1 >li >ul.depth2 >li >a span {
+    position: relative;
+}
+header .inner .gnb ul.depth1 >li >ul.depth2 >li >a:hover span::before {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50%, 0);
+    width: 100%;
+    border-bottom: 1px solid #F5F5EB;
+    color: #fff;
+    content: "";
 }
 header .inner .gnb ul.depth2 {
     display: none;
@@ -111,4 +124,124 @@ header .inner .search input[type="submit"] {
 }
 header .inner .search input::placeholder {
     color: rgba(35, 25, 22, 0.7);
+}
+header.menu_over::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 450px;
+    background-color:rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(7px);
+    z-index: -1;
+}
+header.menu_over .inner .gnb ul.depth1 >li {
+    width: 167px;
+}
+header.menu_over .inner .gnb ul.depth1 >li >ul.depth2 {
+    display: block;
+}
+header.fixed {
+    background-color: transparent;
+    
+}
+@media screen and (min-width:768px) {
+    
+    .header.menu_over.fixed {
+        background-color: transparent;
+    }
+}
+
+footer {
+    margin-top: 150px;
+    position: relative;
+}
+footer::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    content: "";
+    border-bottom: 2px solid #231916;
+}
+footer .familysite {
+    float: right;
+    text-align: center;
+    position: relative;
+}
+footer .familysite button {
+    position: relative;
+    font-weight: 500;
+    padding-right: 81px;
+    margin-top: 30px;
+}
+footer .familysite button::before {
+    position: absolute;
+    right: 40px;
+    top: 7px;
+    content: "";
+    width: 14px;
+    height: 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='7.0708' width='10' height='1' transform='rotate(-45 0 7.0708)' fill='%23231916'/%3E%3Crect width='10' height='1' transform='matrix(0.707107 0.707107 0.707107 -0.707107 6.38916 0.707031)' fill='%23231916'/%3E%3C/svg%3E%0A");
+}
+footer .familysite.on button::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='14.1675' y='0.70752' width='10' height='1' transform='rotate(135 14.1675 0.70752)' fill='%23231916'/%3E%3Crect width='10' height='1' transform='matrix(-0.707107 -0.707107 -0.707107 0.707107 7.77832 7.07129)' fill='%23231916'/%3E%3C/svg%3E%0A");
+}
+footer .familysite ul {
+    display: none;
+    line-height: 50px;
+    text-align: left;
+    position: absolute;
+    left: -36px;
+    top: -310px;
+    background-color: #231916;
+    color: #F5F5EB;
+    border-radius: 15px 15px 0 0 ;
+    padding: 10px 67px 0 36px;
+    box-shadow: -5px 5px 8px 0 rgba(0, 0, 0, 0.25);
+}
+footer .familysite ul li a {
+    display: block;
+    position: relative;
+}
+footer .familysite ul li a:hover::before {
+    position: absolute;
+    right: -45px;
+    top: 19px;
+    width: 8px;
+    height: 14px;
+    content: "";
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.707275' width='10' height='1' transform='rotate(45 0.707275 0)' fill='%23F5F5EB'/%3E%3Crect width='10' height='1' transform='matrix(-0.707107 0.707107 0.707107 0.707107 7.07104 6.38916)' fill='%23F5F5EB'/%3E%3C/svg%3E%0A");
+}
+footer .familysite.on ul {
+    display: block;
+}
+footer .f_inner {
+    display: flex;
+    padding-top: 30px;
+}
+footer .f_inner .f_txt ul,
+footer .f_inner .f_info ul {
+    display: flex;
+}
+footer .f_inner .f_txt ul li,
+footer .f_inner .f_info ul li {
+    margin-right: 20px;
+}
+footer .f_inner .f_txt ul li:first-child {
+    color: #C1B6A4;
+}
+footer .f_inner .f_info ul li:last-child {
+    margin: 0;
+}
+footer .copyright {
+    text-align: center;
+    margin: 30px 0 50px 0;
 }
