@@ -1,35 +1,5 @@
 $(document).ready(function(){
-    let scrolling
-
-    function scroll_chk(){ //함수 선언
-        scrolling = $(window).scrollTop() //스크롤 된 값을 저장
-        console.log(scrolling)
-        if(scrolling > 0 ){
-            $('header').addClass('fixed')
-        }else{
-            $('header').removeClass('fixed')
-        }
-    }
-    scroll_chk() //함수 실행
-    $(window).scroll(function(){ //스크롤 할 때마다 실행
-        scroll_chk()
-    })
-
-    $('header .inner .gnb ul.depth1 >li').on('mouseenter focusin', function(){
-        $('.header .inner .gnb ul.depth1 >li').removeClass('on')
-        $(this).addClass('on')
-        $('header').addClass('menu_over')
-        
-    })
-    $('header .inner .gnb ul.depth1 >li').on('mouseleave', function(){
-        $(this).removeClass('on')
-        
-    })
-    $('header').on('mouseleave', function(){
-        $('header .inner .gnb ul.depth1 >li').removeClass('on')
-        $('header').removeClass('menu_over')
-        
-    })
+    
 
     const visual_swiper = new Swiper('.visual .swiper', {
 
@@ -91,9 +61,4 @@ const news_swiper = new Swiper('.news .swiper', {
 	},
 });
 
-    $('footer .familysite button').on('click', function(){
-        
-        $('footer .familysite').toggleClass('on')
-    })
-    
 })
