@@ -111,7 +111,7 @@ header .inner .search input[type="text"] {
     outline: 0;
     padding-left: 1px;
     margin-right: -3px;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 }
 header .inner .search input[type="submit"] {
     width: 81px;
@@ -146,12 +146,183 @@ header.fixed {
     background-color: transparent;
     
 }
-@media screen and (min-width:768px) {
-    
-    .header.menu_over.fixed {
-        background-color: transparent;
-    }
-}
+                @media screen and (max-width:1600px) {
+                    header .inner {
+                        justify-content: space-around;
+                    }
+                }
+                @media screen and (max-width:1470px) {
+                    header .inner .search {
+                        margin-right: 160px;
+                    }
+                }
+                @media screen and (max-width:1320px) {
+                    header .inner {
+                        justify-content: space-between;
+                    }
+                    header .inner .search {
+                        margin-right: 0;
+                    }
+                    header .inner h1.logo a {
+                        width: 132px;
+                        height: 42px;
+                    }
+                }
+                @media screen and (max-width:1070px) {
+                    header .inner .search input[type="text"] {
+                        width: 130px;
+                        height: 26px;
+                        font-size: 12px;
+                    }
+                    header .inner .search input[type="submit"] {
+                        width: 55px;
+                        height: 26px;
+                        font-size: 12px;
+                    }
+                    header .inner .gnb {
+                        margin-left: 10px;
+                    }
+                    header .inner .gnb ul.depth1 >li {
+                        width: 88px;
+                    }
+                    header .inner .gnb ul.depth1 >li >a {
+                        font-size: 15px;
+                    }
+                }
+
+                @media screen and (max-width:768px) {
+                    header {
+                        height: 50px;
+                        position: absolute;
+                    }
+                    header .inner {
+                        display: block;
+                        padding-top: 15px;
+                    }
+                    header .inner .logo_gnb {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    header .inner h1.logo a {
+                        width: 63px;
+                        height: 20px;
+                    }
+                    header .inner .gnb {
+                        margin: 0;
+                        width: 18px;
+                        
+                    }
+                    header .inner .gnb .gnb_open {
+                        display: block;
+                        font-size: 0;
+                        line-height: 0;
+                        width: 18px;
+                        height: 15px;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-image: url("data:image/svg+xml,%3Csvg width='18' height='15' viewBox='0 0 18 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='7' width='18' height='1' fill='%23231916'/%3E%3Crect y='14' width='18' height='1' fill='%23231916'/%3E%3Crect width='18' height='1' fill='%23231916'/%3E%3C/svg%3E%0A");
+                    }
+                    header .inner .gnb ul.depth1 >li >a {
+                        display: none;
+                    }
+                    header .inner .search input[type="text"] {
+                        display: none;
+                    }
+                    header .inner .search input[type="submit"] {
+                        display: none;
+                        font-size: 0;
+                        line-height: 0;
+                        background-color: transparent;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='7' stroke='%23F5F5EB'/%3E%3Crect x='12.3536' y='12.7071' width='0.5' height='9.5' transform='rotate(-45 12.3536 12.7071)' stroke='%23F5F5EB' stroke-width='0.5'/%3E%3C/svg%3E%0A");
+                    }
+                    header.menu_open {
+                        position: relative;
+                    }
+                    header.menu_open .inner {
+                        display: flex;
+                        flex-direction: row-reverse;
+                    }
+                    header.menu_open .gnb_wrap {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100vh;
+                        background-color: #231916;
+                        z-index: -1;
+                    }
+                    header.menu_open .inner .gnb .gnb_open {
+                        display: none;
+                    }
+                    header.menu_open .inner .gnb .gnb_close {
+                        display: block;
+                        font-size: 0;
+                        line-height: 0;
+                        width: 18px;
+                        height: 18px;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.282471' y='13.5104' width='18' height='1' transform='rotate(-45 0.282471 13.5104)' fill='%23F5F5EB'/%3E%3Crect width='18' height='1' transform='matrix(-0.707107 -0.707107 -0.707107 0.707107 13.7175 13.5104)' fill='%23F5F5EB'/%3E%3C/svg%3E%0A");
+                    }
+                    header.menu_open .inner .gnb ul.depth1 {
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 100px;
+                    }
+                    header.menu_open .inner .gnb ul.depth1 >li >a {
+                        display: block;
+                        color: #F5F5EB;
+                        line-height: 70px;
+                        font-size: 18px;
+                    }
+                    header.menu_open .inner .gnb ul.depth1 >li >ul.depth2{
+                        display: none;
+                        left: 50%;
+                        top: 63px;
+                        transform: translate(-50%, 0);
+                        width: 100vh;
+                        color: #231916;
+                    }
+                    header.menu_open .inner .gnb ul.depth1 >li.on >ul.depth2::before {
+                        position: absolute;
+                        left: 50%;
+                        top: 10px;
+                        transform: translate(-50%, 0);
+                        width: 100vh;
+                        height: 100%;
+                        content: "";
+                        z-index: -1;
+                        background-color: #F5F5EB;
+                    }
+                    header.menu_open .inner .gnb ul.depth1 >li.on >ul.depth2 {
+                        display: block;
+                    }
+                    header.menu_open .inner .gnb ul.depth1 >li >ul.depth2 >li >a {
+                        font-size: 15px;
+                        color: #231916;
+                    }
+                    header.menu_open .inner .gnb ul.depth1 >li >ul.depth2 >li:first-child >a {
+                        padding-top: 20px;
+                    }
+                    header.menu_open .inner .gnb ul.depth1 >li >ul.depth2 >li:last-child >a {
+                        padding-bottom: 30px;
+                    }
+                    header.menu_open .inner .search input[type="submit"] {
+                        display: block;
+                    }
+                }
+                @media screen and (min-width:768px) {
+                    .header.menu_over.fixed {
+                        background-color: transparent;
+                    }
+                }
 
 footer {
     margin-top: 150px;
