@@ -190,6 +190,9 @@
     font-size: 20px;
     opacity: 0;
 }
+.collection .list .swiper >ul >li .txt ul.info {
+    display: none;
+}
 .collection .swiper-wrapper li.swiper-slide.swiper-slide-visible.swiper-slide-active .txt {
     opacity: 1;
 }
@@ -286,103 +289,182 @@
 }
 /****************************슬라이드 진행바, 카운트****************************/
 
-@media screen and (max-width:1600px) {
-    .collection .list h2 {
-        margin-left: 30px;
-    }
-    .collection .list .swiper >ul >li .txt {
-        margin-left: 30px;
-    }
-    .collection .swatch img {
-        width: 90%;
-    }
-    .collection .list .swiper >ul >li .photo {
-        width: 64%;
-    }
-}
-@media screen and (max-width:1400px) {
-    .collection .swatch img {
-        width: 69%;
-    }
-    .collection .list .swiper >ul >li .photo {
-        width: 75%;
-    }
-}
-@media screen and (max-width:1200px) {
-    .collection .list .swiper >ul >li .swatch {
-        left: 34.66%;
-    }
-    .collection .list .swiper >ul >li .photo {
-        width: 105%;
-    }
-}
-@media screen and (max-width:1024px) {
-    .collection .list h2 {
-        margin-top: 30px;
-    }
-    .collection .list .swiper >ul >li .txt {
-        font-size: 15px;
-    }
-    .collection .list .swiper >ul >li .swatch {
-        left: 32%;
-    }
-    .collection .list .swiper >ul >li .photo {
-        width: 120%;
-    }
-}
-@media screen and (max-width:880px) {
-    .collection .list .swiper >ul >li .swatch {
-        left: 28%;
-    }
-    .collection .list .swiper >ul >li .photo {
-        width: 150%;
-    }
-}
-@media screen and (max-width:768px) {
-    .collection .list h2 {
-        margin: -230px 0 0 0;
-    }
-    .collection .list .swiper {
-        width: 106%;
-        margin-left: -20px;
-    }
-    .collection .list .swiper >ul >li {
-        display: block;
-    }
-    .collection .list .swiper >ul >li .txt {
-        margin: 160px 0 0 5px;
-    }
-    .collection .list .swiper >ul >li .txt span.tit {
-        display: none;
-    }
-    .collection .list .swiper >ul >li .txt >ul {
-        display: flex;
-        align-items: flex-end;
-        margin-left: 20px;
-        width: 100%;
-    }
-    .collection .list .swiper >ul >li .txt >ul >li {
-        margin: 60px 20px 0 0;
-    }
-    .collection .list .swiper >ul >li .txt >ul >li:last-child {
-        margin: 0;
-    }
-    .collection .list .swiper >ul >li .photo {
-        width: 100%;
-        margin-top: 50px;
-    }
-    .collection .list .swiper >ul >li .swatch img.pc,
-    .collection .list .swiper >ul >li .photo img.pc {
-        display: none;
-    }
-    .collection .list .swiper >ul >li .swatch img.m,
-    .collection .list .swiper >ul >li .photo img.m {
-        display: block;
-    }
-    .collection .box_slidebar {
-        display: none;
-    }
-}
+                @media screen and (max-width:1600px) {
+                    .collection .list h2 {
+                        margin-left: 30px;
+                    }
+                    .collection .list .swiper >ul >li .txt {
+                        margin-left: 30px;
+                    }
+                    .collection .swatch img {
+                        width: 90%;
+                    }
+                    .collection .list .swiper >ul >li .photo {
+                        width: 64%;
+                    }
+                }
+                @media screen and (max-width:1400px) {
+                    .collection .swatch img {
+                        width: 69%;
+                    }
+                    .collection .list .swiper >ul >li .photo {
+                        width: 75%;
+                    }
+                }
+                @media screen and (max-width:1200px) {
+                    .collection .list .swiper >ul >li .swatch {
+                        left: 34.66%;
+                    }
+                    .collection .list .swiper >ul >li .photo {
+                        width: 105%;
+                    }
+                }
+                @media screen and (max-width:1024px) {
+                    .collection .list h2 {
+                        margin-top: 30px;
+                    }
+                    .collection .list .swiper >ul >li .txt {
+                        font-size: 15px;
+                    }
+                    .collection .list .swiper >ul >li .swatch {
+                        left: 32%;
+                    }
+                    .collection .list .swiper >ul >li .photo {
+                        width: 120%;
+                    }
+                }
+                @media screen and (max-width:880px) {
+                    .collection .list .swiper >ul >li .swatch {
+                        left: 28%;
+                    }
+                    .collection .list .swiper >ul >li .photo {
+                        width: 150%;
+                    }
+                }
+                @media screen and (max-width:768px) {
+                    .collection .list h2 {
+                        margin: -230px 0 0 0;
+                    }
+                    .collection .list .swiper {
+                        width: 109%;
+                        margin-left: -20px;
+                    }
+                    .collection .list .swiper >ul >li {
+                        display: block;
+                        padding-bottom: 125px;
+                    }
+                    .collection .list .swiper >ul >li .txt {
+                        margin: 160px 0 0 5px;
+                    }
+                    .collection .list .swiper >ul >li .txt span.tit {
+                        display: none;
+                    }
+                    .collection .list .swiper >ul >li .txt >ul.sub_tit {
+                        display: flex;
+                        align-items: flex-end;
+                        margin-left: 20px;
+                        width: 500px;
+                    }
+                    .collection .list .swiper >ul >li .txt >ul.sub_tit >li {
+                        margin: 60px 20px 0 0;
+                        width: 100%;
+                    }
+                    .collection .list .swiper >ul >li .txt >ul >li:last-child {
+                        margin: 0;
+                    }
+                    .collection .list .swiper >ul >li .photo {
+                        width: 100%;
+                        margin-top: 50px;
+                    }
+                    .collection .list .swiper >ul >li .swatch img.pc,
+                    .collection .list .swiper >ul >li .photo img.pc {
+                        display: none;
+                    }
+                    .collection .list .swiper >ul >li .swatch img.m,
+                    .collection .list .swiper >ul >li .photo img.m {
+                        display: block;
+                    }
+                    .collection .list .swiper >ul >li .swatch img.m {
+                        margin-top: 660px;
+                    }
+                    .collection .list .swiper >ul >li .txt ul.info {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: flex-end;
+                        position: absolute;
+                        left: 74px;
+                        bottom: 95px;
+                        font-size: 15px;
+                        width: 100%;
+                    }
+                    .collection .list .swiper >ul >li .txt ul.info li em {
+                        font-weight: 500;
+                        color: #000;
+                    }
+                    .collection .box_slidebar {
+                        display: none;
+                    }
+                }
+                @media screen and (max-width:500px) {
+                    .collection .list .swiper {
+                        width: 111%;
+                    }
+                    .collection .list .swiper >ul >li .txt >ul.sub_tit {
+                        width: 380px;
+                    }
+                    .collection .list .swiper >ul >li .swatch img.m {
+                        width: 50%;
+                        margin-top: 490px;
+                    }
+                    .collection .list .swiper >ul >li .txt ul.info {
+                        width: 70%;
+                        left: 78px;
+                    }
+                    .collection .list .swiper >ul >li .photo img.m {
+                        width: 500px;
+                    }
+                }
+                @media screen and (max-width:400px) {
+                    .collection .list h2 {
+                        font-size: 30px;
+                    }
+                    .collection .list .swiper >ul >li .swatch img.m {
+                        width: 40%;
+                        margin-top: 470px;
+                    }
+                    .collection .list .swiper >ul >li .txt >ul.sub_tit {
+                        font-size: 12px;
+                        width: 310px;
+                    }
+                    .collection .list .swiper >ul >li .txt >ul >li span::before {
+                        bottom: -5px;
+                    }
+                    .collection .list .swiper >ul >li .txt >ul >li.active span::before {
+                        bottom: -5px;
+                    }
+                    .collection .list .swiper >ul >li .txt ul.info {
+                        font-size: 12px;
+                        left: 47px;
+                        bottom: 105px;
+                    }
+                    .collection .list .swiper >ul >li .photo {
+                        margin-top: 30px;
+                    }
+                }
+                @media screen and (max-width:320px) {
+                    .collection .list .swiper {
+                        width: 115%;
+                    }
+                    .collection .list h2 {
+                        margin: -230px 0 0px -10px;
+                    }
+                    .collection .list .swiper >ul >li .txt >ul.sub_tit {
+                        margin-left: 10px;
+                    }
+                    .collection .list .swiper >ul >li .txt ul.info {
+                        left: 40px;
+                    }
+                }
 
 .style {
     background-color: #C1B6A4;
@@ -436,6 +518,9 @@
     font-size: 50px;
     color: #F5F5EB;
     text-align: center;
+}
+.style .text h2 br {
+    display: none;
 }
 .style .more {
     position: absolute;
@@ -515,6 +600,148 @@
         width: 222px;
     }
 }
+@media screen and (max-width:768px) {
+    .style {
+        height: 1860px;
+    }
+    .style .photos {
+        display: none;
+    }
+    .style .photos_m {
+        display: flex;
+        justify-content: center;
+    }
+    .style .photos_m img {
+        width: 100%;
+    }
+    .style .photos_m .odd {
+        margin-top: 205px;
+    }
+    .style .photos_m .even {
+        margin-top: 85px;
+    }
+    .style .text h2 {
+        left: 70px;
+        top: 20px;
+        transform: translate(0, 0);
+        text-align: left;
+    }
+    .style .text h2 br {
+        display: block;
+    }
+    .style .more {
+        left: auto;
+        right: 75px;
+        bottom: 55px;
+        transform: translate(0, 0);
+        width: 78px;
+        
+    }
+}
+@media screen and (max-width:728px) {
+    .style .text h2 {
+        left: 50px;
+    }
+}
+@media screen and (max-width:688px) {
+    .style .text h2 {
+        left: 20px;
+    }
+}
+@media screen and (max-width:630px) {
+    .style {
+        height: 1660px;
+    }
+    .style .text h2 {
+        left: 40px;
+    }
+    .style .photos_m .odd ul li {
+        width: 280px;
+    }
+    .style .photos_m .even ul li {
+        width: 280px;
+    }
+    .style .more {
+        right: 50px;
+    }
+}
+@media screen and (max-width:590px) {
+    .style .text h2 {
+        left: 20px;
+    }
+}
+@media screen and (max-width:540px) {
+    .style {
+        height: 1410px;
+    }
+    .style .text h2 {
+        left: 40px;
+        top: 80px;
+        font-size: 40px;
+    }
+    .style .photos_m .odd ul li {
+        width: 230px;
+    }
+    .style .photos_m .even ul li {
+        width: 230px;
+    }
+}
+@media screen and (max-width:480px) {
+    .style {
+        height: 1261px;
+    }
+    .style .text h2 {
+        left: 45px;
+        font-size: 30px;
+    }
+    .style .photos_m .odd ul li {
+        width: 200px;
+    }
+    .style .photos_m .even ul li {
+        width: 200px;
+    }
+}
+@media screen and (max-width:440px) {
+    .style .text h2 {
+        left: 30px;
+    }
+    .style .more {
+        right: 30px;
+    }
+}
+@media screen and (max-width:395px) {
+    .style {
+        height: 1062px;
+    }
+    .style .text h2 {
+        left: 45px;
+    }
+    .style .photos_m .odd ul li {
+        width: 160px;
+    }
+    .style .photos_m .even ul li {
+        width: 160px;
+    }
+    .style .more {
+        right: 45px;
+    }
+}
+@media screen and (max-width:375px) {
+    .style .text h2 {
+        left: 30px;
+    }
+    .style .more {
+        right: 35px;
+    }
+}
+@media screen and (max-width:320px) {
+    .style .text h2 {
+        left: 10px;
+    }
+    .style .more {
+        right: 7px;
+    }
+}
 
 .material .tit {
     text-align: center;
@@ -541,9 +768,92 @@
     font-size: 20px;
     margin-top: 20px;
 }
-.material .txt_1 img,
-.material .txt_2 img {
+.material .txt_1 p br.m_768,
+.material .txt_2 p br.m_768 {
+    display: none;
+}
+.material .txt_1 .photo,
+.material .txt_2 .photo {
+    text-align: center;
+}
+.material .txt_1 .photo img,
+.material .txt_2 .photo img {
     margin-top: 30px;
+}
+@media screen and (max-width:1200px) {
+    .material .txt_1 .photo img,
+    .material .txt_2 .photo img  {
+        width: 80%;
+    }
+}
+@media screen and (max-width:1080px) {
+    .material .tit {
+        text-align: left;
+    }
+    .material .txt_1 .photo,
+    .material .txt_2 .photo  {
+        margin-right: 120px;
+    }
+    .material .txt_1 h3,
+    .material .txt_2 h3 {
+        font-size: 30px;
+    }
+    .material .txt_1 p,
+    .material .txt_2 p {
+        font-size: 15px;
+    }
+    .material .txt_1 .photo,
+    .material .txt_2 .photo {
+    text-align: left;
+    } 
+}
+@media screen and (max-width:768px) {
+    .material .txt_1 p,
+    .material .txt_2 p {
+        font-size: 15px;
+    }
+    .material .txt_1 {
+        margin-top: 100px;
+    }
+    .material .txt_2 h3 {
+        margin-top: 50px;
+    }
+    .material .txt_1 p br.m_768,
+    .material .txt_2 p br.m_768 {
+        display: block;
+    }
+    .material .txt_1 .photo,
+    .material .txt_2 .photo {
+    display: none;
+    }
+}
+@media screen and (max-width:580px) {
+    .material h2 {
+        font-size: 30px;
+    }
+    .material .txt_1 {
+        margin-top: 70px;
+    }
+    .material .txt_1 h3,
+    .material .txt_2 h3 {
+        font-size: 20px;
+    }
+    .material .txt_2 h3 {
+        margin-top: 50px;
+    }
+    .material .txt_1 p,
+    .material .txt_2 p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:320px) {
+    .material h2 {
+        margin-left: -15px;
+        width: 310px;
+    }
+    .material .txt_1, .material .txt_2 {
+        margin-left: 0;
+    }
 }
 
 .news .tit {
@@ -569,22 +879,18 @@
     margin-top: 70px;
 }
 .news .swiper ul li {
-    margin-right: 30px;
-    width: 33.33%;
-}
-.news .swiper ul li:last-child {
-    margin: 0;
+    width: 380px;
 }
 .news .swiper ul li a {
     display: block;
 }
 .news .swiper ul li a:hover img {
     transform: scale3d(1.05, 1.05, 1);
-
 }
 .news .swiper ul li a img {
     margin-bottom: 20px;
     transition: 0.55s;
+    width: 100%;
 }
 .news .swiper ul li a span {
     font-weight: 200;
@@ -592,6 +898,9 @@
 .news .swiper ul li a h3 {
     font-size: 20px;
     margin-top: 10px;
+    line-height: 1.2;
+    height: 2.4em;
+    overflow: hidden;
 }
 .news .more {
     text-align: right;
@@ -613,4 +922,47 @@
 .news .more button:hover {
     font-weight: 500;
 }
-
+@media screen and (max-width:1080px) {
+    .news .tit {
+        text-align: left;
+    }
+    .news .swiper ul li {
+        width: 240px;
+    }
+    .news .swiper ul li a span,
+    .news .swiper ul li a h3 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:580px) {
+    .news {
+        margin-top: -40px;
+    }
+    .news .tit h2 {
+        font-size: 30px;
+        margin: 150px 0 -40px 0;
+    }
+    
+    .news .tit::before {
+        top: 41px;
+        border-bottom: 1px solid #231916;
+    }
+    .news .swiper ul li a span,
+    .news .swiper ul li a h3 {
+        font-size: 12px;
+    }
+    .news .swiper ul li a h3 {
+        margin-top: 5px;
+    }
+    .news .swiper ul li a img {
+        margin-bottom: 10px;
+    }
+    .news .more {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:580px) {
+    .news .swiper ul li {
+        width: 160px;
+    }
+}

@@ -50,15 +50,25 @@ const collection_swiper = new Swiper('.collection .swiper', {
 },
 
 });
-
 const news_swiper = new Swiper('.news .swiper', {
-	slidesPerView: "auto",
-	spaceBetween: 10, /* li와 li사이 - 제일 작은 여백 */
+	slidesPerView: 'auto',
+	spaceBetween: 20,
 	breakpoints: {
-		649: {
+		769: {
+			slidesPerView: 'auto',
 			spaceBetween: 30,
-		},		
+		},
+		1025: {
+			slidesPerView: 'auto',
+			spaceBetween: 30,
+		},
+		1200: {
+			slidesPerView: 'auto',
+			spaceBetween: 30,
+		},
 	},
+	centeredSlides: false,
+	loop: true,
 });
 
 })
