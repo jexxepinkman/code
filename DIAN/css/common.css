@@ -52,14 +52,6 @@ html, body {
     word-break: keep-all;
     word-wrap: break-word; 
 }
-.wrapper {
-    width: 1600px;
-    margin: 0 auto;
-}
-.wrapper2 {
-    width: 1200px;
-    margin: 0 auto;
-}
 #wrap {
     min-width: 100%;
     overflow: hidden;
@@ -67,16 +59,6 @@ html, body {
 @media screen and (max-width:1320px) {
     html, body {
         font-size: 15px;  
-    }
-    .wrapper {
-        width: auto;
-        margin: 0 20px;
-    }
-}
-@media screen and (max-width:1240px) {
-    .wrapper2 {
-        width: auto;
-        margin: 0 20px;
     }
 }
 .skipnav {
