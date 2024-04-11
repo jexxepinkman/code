@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url(default.css);
+@font-face {
+    font-family:'PPMonumentExtended';
+    src:url(../fonts/PPMonumentExtended-Regular.otf) format('woff');
+    font-weight:500;
+    font-style:normal;
+}
+@font-face {
+    font-family:'PPMonumentExtended';
+    src:url(../fonts/PPMonumentExtended-Black.otf) format('woff2');
+    font-weight:700;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+::selection {
+    background-color: transparent;
+    color: #460D02;
+}
+::-webkit-selection {
+    background-color: transparent;
+    color: #460D02;
+}
+::-moz-selection {
+    background-color: transparent;
+    color: #460D02;
+}
+::-o-selection {
+    background-color: transparent;
+    color: #460D02;
+}
+
+html, body {
+    font-family: 'PPMonumentExtended', 'GmarketSans', sans-serif;
+    font-size: 15px;  
+    color: #B70809;
+    background-color: #FFE1C5;
+    font-weight: 500;
+    line-height: 1.2;
+    word-break: keep-all;
+    word-wrap: break-word; 
+}
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+}
+.wrapper2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+#wrap {
+    min-width: 100%;
+    overflow: hidden;
+}
+@media screen and (max-width:1320px) {
+    html, body {
+        font-size: 15px;  
+    }
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:1240px) {
+    .wrapper2 {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+.skipnav {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+.skipnav a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    line-height: 50px;
+    background-color: #fdfdfd;
+    color: #020202;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+.skipnav a[href="#gnb"] {
+    background-color: #888;
+}
+.skipnav a:focus {
+    top: 100px;
+}
