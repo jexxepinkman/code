@@ -44,22 +44,39 @@ header .gnb ul.depth1 >li >a {
     font-size: 22px;
     line-height: 100px;
 }
+header .gnb ul.depth1 >li.on >a {
+    color: #B70809;
+}
 header .gnb ul.depth2 {
     display: none;
 }
-header .gnb ul.depth1 >li.on >ul.depth2 {
+header .gnb ul.depth1 >li.on:nth-child(1) >ul.depth2 {
     display: block;
     position: absolute;
     right: -202px;
     top: 13px;
     color: #020202;
 }
-header .gnb ul.depth1 >li.on >ul.depth2::before {
+header .gnb ul.depth1 >li.on:nth-child(2) >ul.depth2 {
+    display: block;
+    position: absolute;
+    right: -137px;
+    top: 113px;
+    color: #020202;
+}
+header .gnb ul.depth1 >li.on:nth-child(3) >ul.depth2 {
+    display: block;
+    position: absolute;
+    right: -99px;
+    top: 213px;
+    color: #020202;
+}
+header .gnb ul.depth1 >li >ul.depth2::before {
     position: absolute;
     left: -22px;
     top: 0;
     content: "";
-    width: 163%;
+    width: 220px;
     height: 114%;
     border: 3px solid #460D02;
     border-left: 0;
@@ -70,4 +87,7 @@ header .gnb ul.depth1 >li >ul.depth2 >li >a {
     display: block;
     font-size: 20px;
     line-height: 75px;
+}
+header .gnb ul.depth1 >li >ul.depth2 >li >a:hover {
+    color: #B70809;
 }
