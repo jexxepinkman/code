@@ -1,26 +1,47 @@
 @charset "utf-8";
 @import url(default.css);
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-display: swap;
+    src: local('Pretendard Medium'), url(../fonts/Pretendard-Medium.woff2) format('woff2'), url(../fonts/Pretendard-Medium.woff) format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    font-display: swap;
+    src: local('Pretendard Black'), url(../fonts/Pretendard-Black.woff2) format('woff2'), url(../fonts/Pretendard-Black.woff) format('woff');
+}
 
 ::selection {
     background-color: transparent;
-    color: #460D02;
+    color: #69FF46;
 }
 ::-webkit-selection {
     background-color: transparent;
-    color: #460D02;
+    color: #69FF46;
 }
 ::-moz-selection {
     background-color: transparent;
-    color: #460D02;
+    color: #69FF46;
 }
 ::-o-selection {
     background-color: transparent;
-    color: #460D02;
+    color: #69FF46;
+}
+::-webkit-scrollbar {
+    width: 15px;  /* 세로축 스크롤바 폭 너비 */
+    background-color: #fdfdfd;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #020202;
+    
 }
 
+
 html, body {
-    font-family: 'PPMonumentExtended', 'GmarketSans', sans-serif;
-    font-size: 15px;  
+    font-family: 'Pretendard', sans-serif;
+    font-size: 15px;
     color: #252422;
     background-color: #fdfdfd;
     font-weight: 500;
@@ -31,6 +52,19 @@ html, body {
 #wrap {
     min-width: 100%;
     overflow: hidden;
+}
+@media screen and (max-width:1600px) {
+    #wrap {
+        overflow: scroll;
+    }
+}
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+}
+.wrapper_2 {
+    width: 600px;
+    margin: 0 auto;
 }
 @media screen and (max-width:1320px) {
     html, body {
