@@ -119,7 +119,6 @@
     padding: 20px 165px 20px 51px;
     border: 2px solid #020202;
     border-right: 0;
-    background-color: #DEDEDE;
     border-radius: 8px 0 0 8px;
     width: 800px;
     height: 454px;
@@ -179,6 +178,7 @@
 }
 .slough .box_ks .box_ks_txt:hover {
     color: #231916;
+    background-color: #C1B6A4;
 }
 .slough .box_ks .box_ks_txt:hover .txt .info_1 span,
 .slough .box_ks .box_ks_txt:hover .txt .info_2 span {
@@ -225,7 +225,6 @@
     padding: 20px 165px 20px 51px;
     border: 2px solid #020202;
     border-right: 0;
-    background-color: #DEDEDE;
     border-radius: 8px 0 0 8px;
     width: 800px;
 }
@@ -274,8 +273,65 @@
     margin-top: 10px;
 }
 
+.slough .box_kimm {
+    display: flex;
+    margin-top: 100px;
+}
+.slough .box_kimm .photo img {
+    margin-top: 19px;
+}
+.slough .box_kimm .box_kimm_txt {
+    padding: 20px 165px 20px 51px;
+    border: 2px solid #020202;
+    border-left: 0;
+    border-radius: 0 8px 8px 0;
+    width: 800px;
+    height: 456px;
+}
+.slough .box_kimm .box_kimm_txt:hover {
+    color: #fdfdfd;
+    background-color: #1B3281;
+}
+.slough .box_kimm .box_kimm_txt:hover .txt .info_1 span,
+.slough .box_kimm .box_kimm_txt:hover .txt .info_2 span {
+    color: #fdfdfd;
+}
+.slough .box_kimm .box_kimm_txt .txt {
+    display: flex;
+    flex-direction: column;
+}
+.slough .box_kimm .box_kimm_txt .txt .tit h3 {
+    font-size: 50px;
+    font-weight: 900;
+}
+.slough .box_kimm .box_kimm_txt .txt .info_1 {
+    margin-top: 20px;
+}
+.slough .box_kimm .box_kimm_txt .txt .info_2 {
+    margin-top: 10px;
+}
+.slough .box_kimm .box_kimm_txt .txt .info_1 span,
+.slough .box_kimm .box_kimm_txt .txt .info_2 span {
+    font-size: 20px;
+    color: rgba(37, 36, 34, 0.77);
+}
+.slough .box_kimm .btn {
+    text-align: right;
+}
+.slough .box_kimm .btn button {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 219px -114px 0 0;
+}
+.slough .box_kimm .box_kimm_photo {
+    padding: 28px 50px;
+    border: 2px solid #020202;
+    border-radius: 8px 0 0 8px;
+    width: 800px;
+}
+
 .hoam {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 .hoam .tit {
     text-align: center;
@@ -596,7 +652,7 @@
 }
 
 .ks {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 .ks .tit {
     text-align: center;
@@ -826,7 +882,7 @@
 }
 
 .dian {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 .dian .tit {
     text-align: center;
@@ -977,4 +1033,179 @@
 }
 .dian .whole .after .main .left_txt .des strong {
     font-weight: 900;
+}
+.dian .whole .after .main .mobile_page {
+    text-align: center;
+}
+.dian .whole .after .main .mobile_page .flex {
+    display: flex;
+    flex-direction: column;
+}
+.dian .whole .after .main .mobile_page .flex .txt h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+.dian .whole .after .main .mobile_page .flex .photo {
+    margin-top: -88px;
+}
+
+.kimm {
+    margin-top: 200px;
+}
+.kimm .tit {
+    text-align: center;
+}
+.kimm .tit h2 {
+    font-size: 50px;
+    font-weight: 900;
+}
+.kimm .whole .before .sub_tit {
+    margin-top: 150px;
+}
+.kimm .whole .before .sub_tit h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+.kimm .whole .before .goal .inner {
+    display: flex;
+}
+.kimm .whole .before .goal .inner .txt {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+}
+.kimm .whole .before .goal .inner .txt strong {
+    font-size: 40px;
+    color: #fdfdfd;
+    margin-bottom: 40px;
+}
+.kimm .whole .before .goal .inner .txt span {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fdfdfd;
+}
+.kimm .whole .before .goal .inner .txt span:last-child {
+    margin-bottom: 0;
+}
+.kimm .whole .before .goal .inner .photo {
+    position: relative;
+    z-index: 0;
+}
+.kimm .whole .before .goal .inner .photo::before {
+    position: absolute;
+    right: -160px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 1920px;
+    height: 300px;
+    background-color: #252422;
+    content: "";
+    z-index: -1;
+}
+.kimm .whole .before .goal .inner .txt,
+.kimm .whole .before .goal .inner .photo {
+    width: 800px;
+}
+.kimm .whole .after .top {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+}
+.kimm .whole .after .main {
+    margin-top: 100px;
+    text-align: center;
+}
+.kimm .whole .after .main .right_txt {
+    position: relative;
+    text-align: left;
+}
+.kimm .whole .after .main .right_txt .des {
+    position: absolute;
+}
+.kimm .whole .after .main .right_txt .des strong,
+.kimm .whole .after .main .left_txt .des strong {
+    font-weight: 900;
+}
+.kimm .whole .after .main .right_txt .des:nth-child(1) {
+    right: 74px;
+    top: -1815px;
+}
+.kimm .whole .after .main .right_txt .des:nth-child(2) {
+    right: -20px;
+    top: -676px;
+}
+.kimm .whole .after .main .right_txt .des:nth-child(3) {
+    right: 199px;
+    top: 116px;
+}
+.kimm .whole .after .main .right_txt .des:nth-child(1)::before,
+.kimm .whole .after .main .right_txt .des:nth-child(2)::before,
+.kimm .whole .after .main .right_txt .des:nth-child(3)::before {
+    position: absolute;
+    left: -130px;
+    top: 6px;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='5' viewBox='0 0 120 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:difference'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' fill='white'/%3E%3C/g%3E%3Cg style='mix-blend-mode:difference'%3E%3Crect x='5' y='2' width='115' height='1' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 5px;
+    content: "";
+    mix-blend-mode: difference;
+}
+.kimm .whole .after .main .left_txt {
+    position: relative;
+    text-align: right;
+}
+.kimm .whole .after .main .left_txt .des {
+    position: absolute;
+}
+.kimm .whole .after .main .left_txt .des:nth-child(1) {
+    left: 100px;
+    top: -2377px;
+}
+.kimm .whole .after .main .left_txt .des:nth-child(1)::before {
+    position: absolute;
+    right: -347px;
+    top: 6px;
+    content: "";
+    width: 337px;
+    height: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg width='337' height='5' viewBox='0 0 337 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:difference'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='matrix(-1 0 0 1 337 0)' fill='white'/%3E%3C/g%3E%3Cg style='mix-blend-mode:difference'%3E%3Crect width='332' height='1' transform='matrix(-1 0 0 1 332 2)' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mix-blend-mode: difference;
+}
+.kimm .whole .after .main .left_txt .des:nth-child(2) {
+    left: 60px;
+    top: -1387px;
+}
+.kimm .whole .after .main .left_txt .des:nth-child(3) {
+    left: 260px;
+    top: 489px;
+}
+.kimm .whole .after .main .left_txt .des:nth-child(2)::before,
+.kimm .whole .after .main .left_txt .des:nth-child(3)::before {
+    position: absolute;
+    top: 6px;
+    right: -128px;
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='5' viewBox='0 0 120 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:difference'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='matrix(-1 0 0 1 120 0)' fill='white'/%3E%3C/g%3E%3Cg style='mix-blend-mode:difference'%3E%3Crect width='115' height='1' transform='matrix(-1 0 0 1 115 2)' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mix-blend-mode: difference;
+}
+.kimm .whole .after .main .menu_page {
+    margin-top: 50px;
+}
+.container .mobile_page {
+    margin-top: 100px;
 }
