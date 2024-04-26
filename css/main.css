@@ -329,6 +329,65 @@
     border-radius: 8px 0 0 8px;
     width: 800px;
 }
+.slough .box_surgery {
+    display: flex;
+    margin-top: 100px;
+}
+.slough .box_surgery .box_surgery_txt {
+    padding: 20px 165px 20px 51px;
+    border: 2px solid #020202;
+    border-right: 0;
+    border-radius: 8px 0 0 8px;
+    width: 800px;
+}
+.slough .box_surgery .box_surgery_txt:hover {
+    background-color: #2A6F2C;
+    color: #fff;
+}
+.slough .box_surgery .box_surgery_txt:hover .txt .info_1 span,
+.slough .box_surgery .box_surgery_txt:hover .txt .info_2 span {
+    color: #fff;
+}
+.slough .box_surgery .box_surgery_txt .txt {
+    display: flex;
+    flex-direction: column;
+}
+.slough .box_surgery .box_surgery_txt .txt .tit h3 {
+    font-size: 50px;
+    font-weight: 900;
+}
+.slough .box_surgery .box_surgery_txt .txt .info_1 {
+    margin-top: 20px;
+}
+.slough .box_surgery .box_surgery_txt .txt .info_2 {
+    margin-top: 10px;
+}
+.slough .box_surgery .box_surgery_txt .txt .info_2 .bottom {
+    margin-top: 10px;
+}
+.slough .box_surgery .box_surgery_txt .txt .info_1 span,
+.slough .box_surgery .box_surgery_txt .txt .info_2 span {
+    font-size: 20px;
+    color: rgba(37, 36, 34, 0.77);
+}
+.slough .box_surgery .btn {
+    text-align: right;
+}
+.slough .box_surgery .btn button {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 219px -114px 0 0;
+}
+.slough .box_surgery .box_surgery_photo {
+    padding: 28px 50px;
+    border: 2px solid #020202;
+    border-radius: 0 8px 8px 0;
+    width: 800px;
+}
+.slough .box_surgery .box_surgery_photo .photo img {
+    margin-top: 24px;
+}
+
 
 .hoam {
     margin-top: 200px;
@@ -1231,6 +1290,183 @@
 .kimm .whole .after .main .menu_page img.second {
     margin-top: 50px;
 }
-.container .mobile_page {
+.kimm .whole .mobile_page {
+    margin-top: 100px;
+    position: relative;
+    left: -154px;
+}
+
+.surgery {
+    margin-top: 200px;
+}
+.surgery .tit {
+    text-align: center;
+}
+.surgery .tit h2 {
+    font-size: 50px;
+    font-weight: 900;
+}
+.surgery .whole .before .sub_tit {
+    margin-top: 150px;
+}
+.surgery .whole .before .sub_tit h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+.surgery .whole .before .goal {
+    margin-top: 100px;
+}
+.surgery .whole .before .goal .inner {
+    display: flex;
+}
+.surgery .whole .before .goal .inner .txt {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+}
+.surgery .whole .before .goal .inner .txt strong {
+    font-size: 40px;
+    color: #fdfdfd;
+    margin-bottom: 40px;
+}
+.surgery .whole .before .goal .inner .txt span {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fdfdfd;
+}
+.surgery .whole .before .goal .inner .txt span:last-child {
+    margin-bottom: 0;
+}
+.surgery .whole .before .goal .inner .photo {
+    position: relative;
+    z-index: 0;
+}
+.surgery .whole .before .goal .inner .photo::before {
+    position: absolute;
+    left: -160px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 1920px;
+    height: 300px;
+    background-color: #252422;
+    content: "";
+    z-index: -1;
+}
+.surgery .whole .before .goal .inner .txt,
+.surgery .whole .before .goal .inner .photo {
+    width: 800px;
+}
+.surgery .whole .after {
+    margin-top: 100px;
+}
+.surgery .whole .after .top {
+    display: flex;
+    justify-content: space-between;
+}
+.surgery .whole .after .top .sub_tit h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+.surgery .whole .after .top .btn span {
+    font-size: 40px;
+    font-weight: 900;
+}
+.surgery .whole .after .main {
+    margin-top: 100px;
+    text-align: center;
+}
+.surgery .whole .after .main strong {
+    font-weight: 900;
+}
+.surgery .whole .after .main .page_2 {
+    margin-top: 50px;
+}
+.surgery .whole .after .main .page_2 img:nth-child(2) {
+    margin-top: 50px;
+}
+.surgery .whole .after .main .page_2 img:nth-child(3) {
+    margin-top: 50px;
+}
+.surgery .whole .after .main .page_2 img:nth-child(4) {
+    margin-top: 50px;
+}
+.surgery .whole .after .main .right_txt {
+    position: relative;
+    text-align: left;
+}
+.surgery .whole .after .main .right_txt .des {
+    position: absolute;
+}
+.surgery .whole .after .main .right_txt .des::before {
+    position: absolute;
+    left: -165px;
+    top: 7px;
+    height: 5px;
+    content: "";
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    mix-blend-mode: difference;
+}
+.surgery .whole .after .main .right_txt .des:nth-child(1) {
+    right: -70px;
+    top: -5790px;
+}
+.surgery .whole .after .main .right_txt .des:nth-child(1)::before,
+.surgery .whole .after .main .right_txt .des:nth-child(2)::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='155' height='5' viewBox='0 0 155 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:difference'%3E%3Cg style='mix-blend-mode:difference'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' fill='white'/%3E%3C/g%3E%3Cg style='mix-blend-mode:difference'%3E%3Crect x='5' y='2' width='150' height='1' fill='white'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 155px;
+}
+.surgery .whole .after .main .right_txt .des:nth-child(2) {
+    right: 40px;
+    top: -5020px;
+}
+.surgery .whole .after .main .left_txt {
+    position: relative;
+    text-align: right;
+}
+.surgery .whole .after .main .left_txt .des {
+    position: absolute;
+}
+.surgery .whole .after .main .left_txt .des::before {
+    position: absolute;
+    top: 7px;
+    height: 5px;
+    content: "";
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    mix-blend-mode: difference;
+}
+.surgery .whole .after .main .left_txt .des:nth-child(1) {
+    left: 80px;
+    top: -6280px;
+}
+.surgery .whole .after .main .left_txt .des:nth-child(1)::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='155' height='5' viewBox='0 0 155 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:difference'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='matrix(-1 0 0 1 155 0)' fill='white'/%3E%3C/g%3E%3Cg style='mix-blend-mode:difference'%3E%3Crect width='150' height='1' transform='matrix(-1 0 0 1 150 2)' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 155px;
+    right: -165px;
+}
+.surgery .whole .after .main .left_txt .des:nth-child(2) {
+    left: 30px;
+    top: -1440px;
+}
+.surgery .whole .after .main .left_txt .des:nth-child(2)::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='85' height='5' viewBox='0 0 85 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:difference'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='matrix(-1 0 0 1 85 0)' fill='white'/%3E%3C/g%3E%3Cg style='mix-blend-mode:difference'%3E%3Crect width='80' height='1' transform='matrix(-1 0 0 1 80 2)' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 85px;
+    right: -96px;
+}
+.surgery .whole .after .main .left_txt .des:nth-child(3) {
+    left: 120px;
+    top: -840px;
+}
+.surgery .whole .after .main .left_txt .des:nth-child(3)::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='5' viewBox='0 0 120 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:difference'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='matrix(-1 0 0 1 120 0)' fill='white'/%3E%3C/g%3E%3Cg style='mix-blend-mode:difference'%3E%3Crect width='115' height='1' transform='matrix(-1 0 0 1 115 2)' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 120px;
+    right: -131px;
+}
+.surgery .whole .after .main .mobile_page .photo {
     margin-top: 100px;
 }
