@@ -29,6 +29,9 @@ header .gnb ul li:nth-child(3) a:hover {
 header .gnb ul li:nth-child(4) a:hover {
     color: #1B3281;
 }
+header .gnb ul li:nth-child(5) a:hover {
+    color: #2A6F2C;
+}
 header.fixed {
     background-color:rgba(0, 0, 0, 0.33);
     display: block;
