@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
     let scrolling 
     let obj = $('.visual .photo span')
@@ -21,3 +22,4 @@ $(document).ready(function(){
     })
 
 })
+*/
